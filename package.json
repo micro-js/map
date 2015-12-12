@@ -1,0 +1,22 @@
+{
+  "name": "@micro-js/map",
+  "description": "Map a function over a container of some kind",
+  "repository": "git://github.com/micro-js/map.git",
+  "version": "0.0.0",
+  "license": "MIT",
+  "main": "lib/index.js",
+  "scripts": {
+    "postversion": "git push && git push --tags && npm publish --access=public"
+  },
+  "dependencies": {
+    "@micro-js/is-array": "^1.0.0",
+    "@micro-js/is-generator": "^1.1.1",
+    "@micro-js/is-object": "^1.0.0",
+    "@micro-js/map-array": "^1.1.0",
+    "@micro-js/map-gen": "^1.4.0",
+    "@micro-js/map-obj": "^1.1.2"
+  },
+  "devDependencies": {
+    "tape": "^4.2.2"
+  }
+}
