@@ -17,8 +17,9 @@ Map a function over a container of some kind
 ```js
 var map = require('@micro-js/map')
 
-map(add1, [1, 2, 3])          // -> [2, 3, 4]
-map(add1, {a: 1, b: 2, c: 3}) // -> {a: 2, b: 3, c: 4}
+map(add1, [1, 2, 3])          // => [2, 3, 4]
+map(add1, {a: 1, b: 2, c: 3}) // => {a: 2, b: 3, c: 4}
+map(add1, function * () {yield 1; yield 2; yield 3}) // => function * () {yield 2; yield 3; yield 4}
 
 function add1 (n) {
   return n + 1
@@ -30,7 +31,7 @@ function add1 (n) {
 ### map(fn, container)
 
 - `fn` - The function to map over val. Accepts `(val, key)` and returns a new `val` to be set at `key`.
-- `container` - A container of some kind (objects or arrays at the moment, generators soon too).
+- `container` - A container of some kind (objects, arrays, generators or functors).
 
 **Returns:** A new entity of the same type as `container` with all of its values being replaced by the result of `fn(val, key)`.
 
