@@ -10,12 +10,12 @@ Map a function over a container of some kind
 
 ## Installation
 
-    $ npm install @micro-js/map
+    $ npm install @f/map
 
 ## Usage
 
 ```js
-var map = require('@micro-js/map')
+var map = require('@f/map')
 
 map(add1, [1, 2, 3])          // => [2, 3, 4]
 map(add1, {a: 1, b: 2, c: 3}) // => {a: 2, b: 3, c: 4}
@@ -45,5 +45,5 @@ MIT
 [git-url]: https://github.com/micro-js/map
 [standard-image]: https://img.shields.io/badge/code%20style-standard-brightgreen.svg?style=flat
 [standard-url]: https://github.com/feross/standard
-[npm-image]: https://img.shields.io/npm/v/@micro-js/map.svg?style=flat-square
-[npm-url]: https://npmjs.org/package/@micro-js/map
+[npm-image]: https://img.shields.io/npm/v/@f/map.svg?style=flat-square
+[npm-url]: https://npmjs.org/package/@f/map
