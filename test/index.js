@@ -4,7 +4,7 @@
 
 var map = require('..')
 var test = require('tape')
-var supportsGen = require('@micro-js/supports-gen')
+var supportsGen = require('@f/supports-gen')
 
 /**
  * Tests
