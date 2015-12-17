@@ -50,7 +50,7 @@ test('arrays, objects, generators and functors should be mappable', function (t)
   t.equal(map.can({}), true)
   t.equal(map.can(new Functor()), true)
   if (supportsGen()) {
-    t.equal(map.can(function * () {}), true)
+    eval('t.equal(map.can(function * () {}), true)')
   }
   t.end()
 })
