@@ -24,9 +24,16 @@ test('should work with arrays, objects and generators', function (t) {
   }
 })
 
+
+
 test('should work with functor', function (t) {
   var f = new Functor([1, 2, 3])
   t.deepEqual(map(add1, f), [2, 3, 4])
+  t.end()
+})
+
+test('should handle undefined gracefully', function (t) {
+  t.equal(map(add1), undefined)
   t.end()
 })
 

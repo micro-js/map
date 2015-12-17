@@ -13,6 +13,7 @@
     "@f/is-function": "^1.0.4",
     "@f/is-generator": "^1.1.1",
     "@f/is-object": "^1.0.0",
+    "@f/is-undefined": "^1.1.1",
     "@f/map-array": "^1.1.0",
     "@f/map-gen": "^1.4.0",
     "@f/map-obj": "^1.1.2",
