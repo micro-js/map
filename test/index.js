@@ -35,6 +35,26 @@ test('should handle undefined gracefully', function (t) {
   t.end()
 })
 
+test('primatives should not be mapable', function (t) {
+  t.equal(map.can(1), false)
+  t.equal(map.can('1'), false)
+  t.equal(map.can(), false)
+  t.equal(map.can(null), false)
+  t.equal(map.can(true), false)
+  t.equal(map.can(Symbol.iterator), false)
+  t.end()
+})
+
+test('arrays, objects, generators and functors should be mappable', function (t) {
+  t.equal(map.can([]), true)
+  t.equal(map.can({}), true)
+  t.equal(map.can(new Functor()), true)
+  if (supportsGen()) {
+    t.equal(map.can(function * () {}), true)
+  }
+  t.end()
+})
+
 function add1 (n) {
   return n + 1
 }

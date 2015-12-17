@@ -35,6 +35,13 @@ function add1 (n) {
 
 **Returns:** A new entity of the same type as `container` with all of its values being replaced by the result of `fn(val, key)`.
 
+### .can(container)
+Check if `container` is mappable.
+
+ - `container` - container to check
+
+**Returns:** A bollean indicating if it's mappable.
+
 ## License
 
 MIT
