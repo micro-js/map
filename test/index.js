@@ -30,8 +30,10 @@ test('should work with functor', function (t) {
   t.end()
 })
 
-test('should handle undefined gracefully', function (t) {
-  t.equal(map(add1), undefined)
+test('should throw undefined', function (t) {
+  t.throws(function () {
+    map(add1)
+  })
   t.end()
 })
 
