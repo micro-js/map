@@ -2,7 +2,7 @@
   "name": "@f/map",
   "description": "Map a function over a container of some kind",
   "repository": "git://github.com/micro-js/map.git",
-  "version": "1.3.0",
+  "version": "1.4.0",
   "license": "MIT",
   "main": "lib/index.js",
   "scripts": {
