@@ -4,7 +4,6 @@
 
 var map = require('..')
 var test = require('tape')
-var supportsGen = require('@f/supports-gen')
 
 /**
  * Tests
