@@ -12,13 +12,10 @@
     "@f/is-array": "^1.0.0",
     "@f/is-function": "^1.0.4",
     "@f/is-generator": "^1.1.1",
-    "@f/is-null": "^1.0.0",
     "@f/is-object": "^1.0.0",
-    "@f/is-undefined": "^1.1.1",
     "@f/map-array": "^1.1.0",
-    "@f/map-gen": "^1.4.0",
-    "@f/map-obj": "^1.1.2",
-    "@f/supports-gen": "^1.0.0"
+    "@f/map-gen": "^1.6.0",
+    "@f/map-obj": "^1.1.2"
   },
   "devDependencies": {
     "tape": "^4.2.2"
